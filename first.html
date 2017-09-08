@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>first vuejs</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+
+<style>
+fieldset{
+	width:2%;
+	height:100%; 
+	position: absolute;
+    left: 1100px;
+    top: 0px;
+	background-color: gray;
+}
+nav{
+	width:80%;
+	}
+</style>
+
+
+
+
+
+
+
+<fieldset>
+	<div id="root" class="container">
+	<button type="button-hide">Edit</button>
+	<button type="button-hide">Preview</button>
+	<button type="button-hide">Save</button>
+</div>
+</fieldset>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Website builder</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">File</a></li>
+      <li><a href="#Edit">Edit</a></li>
+      <li><a href="#">save</a></li>
+         </ul>
+  </div>
+</nav>
+	<div id="rdemo">
+		<input type="text" id="input" v-model="message">
+		<p>The entered test:{{message}}.211
+		4<br>
+		243<br>
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		24324<br><br>444
+		
+		</p>
+	</div>
+	
+
+	<section class="page-section bg-gray-lighter" id="Edit">
+                <div class="container relative">
+                    
+                    <!-- Section Headings -->
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                            <div class="section-title">
+                                Our Story<span class="st-point">.</span>
+                            </div>
+                            <h2 class="section-heading">We&rsquo;re branding &amp;&nbsp;digital
+		studio from New&nbsp;York</h2>
+                            <div class="section-line mb-60 mb-xxs-30"></div>
+                        </div>
+                        
+                    </div>
+	<script src="https://unpkg.com/vue@2.4.2"></script>
+	
+	<script type="text/javascript">
+	var vm = new Vue({
+			el: '#rdemo',
+			data: {
+			message: 'Hello Vue!'}
+        })
+	</script>
+</body>
+</html>
